@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @media screen and ( max-width:376px){
+          .container{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+          background-color: palegreen;
+          border: 3px solid blue;
+          border-radius: 5px;
+          }  
+          .container .a{
+            border: 1px solid blue;
+             border-radius:10px ;
+             background-color: aliceblue;
+             width: 120px;
+             text-align: center;
+             margin: 5px;
+          }        
+ .container1 img {
+    height:100px;
+    width: 100px;
+    border: 1px solid black;
+    padding: 5px;
+    background-color:yellow;
+    border-radius: 50px;
+    margin: 5px;
+
+}
+.container1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    border: 1px solid red;
+    gap: 10px;
+    background-color:lightskyblue;
+    border: 3px solid orangered;
+    border-radius: 10px;
+    
+    
+} .container2,.container3{
+    display: none;
+}}
+ @media screen and ( min-width:376px) and (max-width:426px){
+    .container{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+          background-image: linear-gradient(lightskyblue,pink);
+          }  
+          .container .a{
+            border: 1px solid blue;
+             border-radius:5px ;
+             margin: 5px;
+          }        
+          .container1,.container3{
+                     display: none;
+                      }
+ .container2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 5px double aquamarine;
+    background-color: pink;
+}
+    
+} .container2 .one img{
+    height:150px;
+    width: 150px;
+    border: 1px solid black;
+    margin: 10px;
+    border: 3px dotted purple;
+    
+}
+ 
+ @media screen and ( min-width:426px) and (max-width:769px)
+ {
+    .container3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-image: linear-gradient(white,lightskyblue);
+    } .container3 .two img{
+        height:150px;
+    width: 150px;
+    border: 1px solid black;
+    margin: 5px;
+    border: 3px solid yellow;
+    border-radius: 10px;
+    
+  
+    }
+    .container1,.container2{
+        display: none;
+    }
+    .container{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+          background-image: linear-gradient(pink,white);
+          }  
+          .container .a{
+            border: 1px solid lightgreen;
+             border-radius:5px ;
+             background-color:lightgreen;
+             color:purple;
+          }        
+ .container1 img {
+    height:100px;
+    width: 100px;
+    border: 1px solid black;
+    padding: 5px;
+
+ }
+
+ }
+        </style>
+</head>
+<body>
+    <div class="container">
+    <div class="a">HOME</div>
+    <div class="a">ABOUT US</div>
+    <div class="a">CONTACT US</div>
+    <div class="a">LOGIN</div>
+    <div class="a">SIGNIN</div>
+    </div><br>
+    <div class="container1">
+        <img src="./images1/b1.jpg" >
+        <img src="./images1/d1.jpg">
+        <img src="./images1/f1.webp">
+        <img src="./images1/t1.jpg">
+        <img src="./images1/d2.jpg">
+        <img src="./images1/f3.jpg">
+    </div>
+        <div class="container2">
+        <div class="one">
+        <img src="./images1/d1.jpg" >
+        <img src="./images1/f3.jpg">
+        </div>
+        <div class="one">
+        <img src="./images1/t1.jpg">
+        <img src="./images1/b1.jpg">
+        </div>
+    </div>
+    <div class="container3">
+    <div class="two">
+        <img src="./images1/b2.png" >
+        <img src="./images1/b1.jpg">
+        <img src="./images1/b4.jpg">
+    </div>
+    <div  class="two">
+        <img src="./images1/t2.jpg">
+        <img src="./images1/t1.jpg">
+        <img src="./images1/t3.jpg">
+    </div>
+    <div  class="two">
+        <img src="./images1/d1.jpg">
+        <img src="./images1/d2.jpg">
+        <img src="./images1/d3.jpeg">
+    </div>
+    </div>
+    
+</body>
+</html>
