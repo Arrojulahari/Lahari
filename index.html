@@ -3,272 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title><style>
-        
-         
-        .balls{
-            display: flex;
-            gap: 20px;
-        }
-        @keyframes bounce1 {
-            
-            0%{
-                transform:translate(10px,10px);
-                background-color:yellow;
-            }
-            30%{
-                transform:translate(100px,100px);
-                background-color:red; 
-            }
-            60%{
-                transform:translate(100px,100px);
-                background-color:blue; 
-            }
-            80%{
-                transform:translate(100px,100px);
-                background-color:green;
-            }
-            100%{
-                transform:translate(100px,100px);
-                background-color:pink; 
-            }
-         
-         }
-         .b1{
-            animation-name: bounce1;
-            animation-duration: 1s;
-            animation-iteration-count: infinite;
-            animation-direction: alternate;
-            height: 30px;
-            width: 30px;
-            background-color: blue;
-            border-radius: 50%;
-            
-           }
-        @keyframes bounce2 {
-            
-            from{
-                transform:translateY(10px);
-                background-color:red;
-            }
-         to{
-            transform: translateY(200px);
-         }}
-        .b2{
-            animation-name: bounce2;
-            animation-duration: 1s;
-            animation-delay: 3s;
-            animation-iteration-count: infinite;
-            animation-direction: alternate;
-            border: 1px solid green;
-            height: 30px;
-            width: 30px;
-            background-color: green;
-            border-radius: 50%;
-         }
-         @keyframes bounce3 {
-            
-            from{
-                transform:translateX(10px);
-                background-color:purple;
-            }
-         to{
-            transform: translateX(200px);
-         }}
-         .b3{
-            animation-name: bounce3;
-            animation-duration: 1s;
-            animation-direction: alternate;
-            animation-iteration-count: infinite;
-            border: 1px solid pink;
-            height: 30px;
-            width: 30px;
-            background-color: pink;
-            border-radius: 50%;
-         }
-         @keyframes bounce4 {
-            
-            from{
-                transform:translateY(100px);
-                background-color:yellow
-            }
-         to{
-            transform:translateY(200px);
-         }}
-
-         .b4{
-            animation-name: bounce4;
-            animation-duration: 1s;
-            animation-direction: alternate;
-            animation-iteration-count: infinite;
-            border: 1px solid blue;
-            height: 30px;
-            width: 30px;
-            background-color: blue;
-            border-radius: 50%;
-            margin-left: 100px;
-         }
-         @keyframes bounce5 {
-            
-            from{
-                transform:translateX(-10px);
-                background-color:orange
-            }
-         to{
-            transform: translateX(-200px);
-         }}
-        .b5{
-            animation-name: bounce5;
-            animation-duration: 1s;
-            animation-iteration-count: infinite;
-            animation-direction: alternate;
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <script src="./bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
+    <style>
+        table,th,td,tr{
             border: 1px solid black;
-            height: 30px;
-            width: 30px;
-            background-color: black;
-            border-radius: 50%;
-         }
-           .container{
-            display: flex;
-            /* align-items: center; */
-            /* justify-content: center; */
-
-        }
-        .a{
-            
-            height: 1000px;
             width: 1000px;
-            display: flex
-            align-items: center;
-            justify-content: center;
+            height: 50px;
         }
-        @keyframes background{
-           10%{background-image:url("./m1.jpg");background-size: 300px 400px;background-position: center;rotate: 360deg;}
-           20%{background-image:url("./m2.jpg");background-size: 550px 700px;background-position: center;rotate: -360deg;}
-           30%{background-image:url("./m3.jpg");background-size: 400px 500px;background-position: center;rotate: 360deg;}
-           40%{background-image:url("./m4.jpeg");background-size: 600px 400px;background-position: center;rotate: -360deg;}
-           50%{background-image:url("./m5.jpeg");background-size:300px 500px;background-position: center;rotate: 360deg;}
-           60%{background-image:url("./m6.jpg");background-size: 700px 700px;background-position: center;rotate: -360deg;}
-           70%{background-image:url("./m7.jpeg");background-size: 500px 550px;background-position: center;rotate: 360deg;}
-           80%{background-image:url("./m8.jpg");background-size: 400px 600px;background-position: center;rotate: -360deg;}
-           90%{background-image:url("./m9.jpeg");background-size: 500px 500px;background-position: center;rotate: 360deg;}
-           100%{background-image:url("./m10.jpeg");background-size: 700px 800px;background-position: center;rotate: -360deg;}
-
-            }
-        .a{
-            animation: background;
-            animation-duration: 30s;
-            animation-iteration-count: infinite;
-            animation-direction: alternate;
-            background-repeat: no-repeat;
-
-        }
-        
-        @keyframes load {
-            from{transform: scale(0);
-            }
-            to{
-                transform: scale(1);
-                background-color: green;
-            } }
-            
-            
-            
-        .container1{
-            display: flex;
-            gap: 10px;
-        }
-        .b{
-            animation-name: load;
-            animation-duration: 1s;
-            animation-delay: 0s;
        
-            animation-direction:alternate;
-            
-            animation-iteration-count: infinite;
-            height: 30px;
-            width: 30px;
-            border-radius: 50%;
-            background-color: palevioletred;
-        }
-            
         
-            .c{
-            animation-name: load;
-            animation-duration:1s;
-            animation-delay:0.3s;
-            animation-iteration-count: infinite;
-            animation-direction: alternate;
-            
-            height: 30px;
-            width: 30px;
-            border-radius: 50%;
-            background-color: palevioletred;animation-duration: 1s;
-            
-           
-             }
-             .d{
-            animation-name: load;
-            animation-duration:1s;
-            animation-delay: 0.5s;
-            transition-timing-function: ease;
-            animation-iteration-count: infinite;
-            animation-direction: alternate;
-            height: 30px;
-            width: 30px;
-            border-radius: 50%;
-            background-color: palevioletred;
-           
-             }
-             .e{
-            animation-name: load;
-            animation-duration:1s;
-            animation-delay: 0.8s;
-            animation-direction: alternate;
-            animation-iteration-count: infinite;
-            height: 30px;
-            width: 30px;
-            border-radius: 50%;
-            background-color: palevioletred;
-           
-             }
-             .f{
-            animation-name: load;
-            animation-duration: 1s;
-            animation-delay: 0.9s;
-            animation-iteration-count: infinite;
-            height: 30px;
-            width: 30px;
-            border-radius: 50%;
-            background-color: palevioletred;
-            animation-direction: alternate;
-            
-         }
-         
     </style>
-</head>
-<body><h1 >bouncing</h1>
-    <div class="balls">
-        <div class="b1"></div>
-        <div class="b2"></div>
-        <div class="b3"></div>
-        <div class="b4"></div>
-        <div class="b5"></div>
-    </div><br><br><br><br><br><br><br><br><br><br>v<br>
-    <h1 style=>Mahesh movies</h1>
-    <div class="container">
-        <div class="a"></div>
-
-    </div>
-    <h1>loaders</h1>
-
-    <div class="container1">
-        <div class="b"></div>
-        <div class="c" ></div>
-        <div class="d"></div>
-        <div class="e"></div>
-        <div class="f"></div>
-    </div><br><br><br><br><br>
+    </head>
+<body>
+    <h1>Bootstrap styles</h1><br><br>
+    <h3>Table</h3><br>
+    <table class="table table-striped-columns table-striped-columns">
+        <tr class="table-primary">
+        <th class="table-secondary">date</th>
+        <th>match</th>
+        <th class="table-danger">venue</th>
+        <th>timing</th>
+        </tr>
+        <tr class="table-secondary">
+            <td class="table-dark">october 8</td>
+            <td>india vs Australia</td>
+            <td>chennai</td>
+            <td>mg</td>
+        </tr>
+        <tr class="table-success">
+            <td>october 10</td>
+            <td>india vs Afganistan</td>
+            <td>delhi</td>
+            <td>mg</td>
+        </tr>
+        <tr class="table-danger">
+            <td>october 12</td>
+            <td>india vs pakistan</td>
+            <td class="table-info">ahmedhabadh</td>
+            <td>evg</td>
+        </tr>
+        <tr class="table-warning">
+            <td>october 14</td>
+            <td  class="table-secondary">india vs bangladesg</td>
+            <td>pune</td>
+            <td>mg</td>
+        </tr>
+        <tr class="table-info">
+            <td>october 16</td>
+            <td  class="table-dark">india vs newzealand</td>
+            <td>dharmashala</td>
+            <td>evg</td>
+        </tr>
+        <tr class="table-light">
+            <td  class="table-secondary">october 18</td>
+            <td>india vs england</td>
+            <td>lucknow</td>
+            <td class="table-danger">evg</td>
+        </tr>
+        <tr class="table-danger">
+            <td>october 20</td>
+            <td class="table-info">india vs srilanka</td>
+            <td class="table-secondary">mumbai</td>
+            <td class="table-dark">evg</td>
+        </tr>
+        <tr>
+            <td class="table-warning">october 22</td>
+            <td>india vs southafrica</td>
+            <td>kolkata</td>
+            <td>mg</td>
+        </tr>
+        <tr>
+            <td class="table-primary">october 24</td>
+            <td>india vs netherland</td>
+            <td>bengaluru</td>
+            <td class="table-primary">mg</td>
+        </tr>
     
+    </table> <br>
+    <h1>buttons</h1><br>
+    <button class="btn btn-primary" style="color: yellow;">button</button>&nbsp<button class="btn btn-secondary" style="color:blue;">button</button>&nbsp<button class="btn btn-success" style="color: black;">button</button>&nbsp<button class="btn btn-danger">button</button>&nbsp<button class="btn btn-warning">button</button>&nbsp<button class="btn btn-info">button</button>&nbsp<button class="btn btn-light">&nbsp</button><button class="btn btn-light">button</button>&nbsp<button class="btn btn-dark">button</button><button class="btn btn-link">button</button><br><br>
+    <button class="btn btn-outline-primary" style="color: green;">button</button>&nbsp<button class="btn btn-outline-secondary" style="color: blue;">button</button>&nbsp<button class="btn btn-outline-success" style="color: purple;">button</button>&nbsp<button class="btn btn-outline-danger" style="color: yellow;">button</button>&nbsp<button class="btn btn-outline-warning" style="color: red;">button</button>&nbsp<button class="btn btn-outline-info" style="color: maroon;">button</button>&nbsp<button class="btn btn-outline-light" style="color: red;">button</button><button class="btn btn-outline-dark" style="color: palevioletred;">button</button><br><br>
+    <h1>border spinner</h1><br>
+    <div class="spinner-border" role="status" style="height: 200px;width: 200px;background-image: url(./f1.webp);background-size: 200px;color:pink;" >
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="spinner-border" role="status" style="height: 140px;width: 140px;background-image: linear-gradient(skyblue,white);color:lightblue;" >
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="spinner-border text-warning" role="status" style="height: 120px;width: 120px;background-image: linear-gradient(yellow,white);">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="spinner-border text-danger" role="status" style="height: 100px;width: 100px;background-image: linear-gradient(red,white)" >
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="spinner-border text-success" role="status" style="height: 80px;width: 80px;background-image: linear-gradient(white,lightgreen);">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="spinner-border" role="status" style="height: 60px;width: 60px;color:blue;background-image: linear-gradient(white,blue);">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="spinner-border text-dark" role="status" style="height: 40px;width: 40px;background-image: linear-gradient(white,black);">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="spinner-border " role="status" style="color: pink;height: 30px;width: 30px;background-image: linear-gradient(pink,white);">
+        <span class="visually-hidden">Loading...</span>
+      </div><br><br>
+     <h1>Growing spinner</h1><br>
+      <div class="spinner-grow text-primary" role="status"style="height: 40px;width:40px">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="spinner-grow text-secondary" role="status"style="height: 50px;width:50px">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="spinner-grow text-success" role="status"style="height: 60px;width:60px">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="spinner-grow text-danger" role="status"style="height: 70px;width:70px">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="spinner-grow text-warning" role="status"style="height: 80px;width:80px">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="spinner-grow text-info" role="status"style="height: 90px;width:90px">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="spinner-grow text-dark" role="status"style="height: 100px;width:100px">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+
 </body>
 </html>
