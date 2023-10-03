@@ -3,272 +3,234 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title><style>
-        
-         
-        .balls{
-            display: flex;
-            gap: 20px;
-        }
-        @keyframes bounce1 {
-            
-            0%{
-                transform:translate(10px,10px);
-                background-color:yellow;
-            }
-            30%{
-                transform:translate(100px,100px);
-                background-color:red; 
-            }
-            60%{
-                transform:translate(100px,100px);
-                background-color:blue; 
-            }
-            80%{
-                transform:translate(100px,100px);
-                background-color:green;
-            }
-            100%{
-                transform:translate(100px,100px);
-                background-color:pink; 
-            }
-         
-         }
-         .b1{
-            animation-name: bounce1;
-            animation-duration: 1s;
-            animation-iteration-count: infinite;
-            animation-direction: alternate;
-            height: 30px;
-            width: 30px;
-            background-color: blue;
-            border-radius: 50%;
-            
-           }
-        @keyframes bounce2 {
-            
-            from{
-                transform:translateY(10px);
-                background-color:red;
-            }
-         to{
-            transform: translateY(200px);
-         }}
-        .b2{
-            animation-name: bounce2;
-            animation-duration: 1s;
-            animation-delay: 3s;
-            animation-iteration-count: infinite;
-            animation-direction: alternate;
-            border: 1px solid green;
-            height: 30px;
-            width: 30px;
-            background-color: green;
-            border-radius: 50%;
-         }
-         @keyframes bounce3 {
-            
-            from{
-                transform:translateX(10px);
-                background-color:purple;
-            }
-         to{
-            transform: translateX(200px);
-         }}
-         .b3{
-            animation-name: bounce3;
-            animation-duration: 1s;
-            animation-direction: alternate;
-            animation-iteration-count: infinite;
-            border: 1px solid pink;
-            height: 30px;
-            width: 30px;
-            background-color: pink;
-            border-radius: 50%;
-         }
-         @keyframes bounce4 {
-            
-            from{
-                transform:translateY(100px);
-                background-color:yellow
-            }
-         to{
-            transform:translateY(200px);
-         }}
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<style>
+ 
 
-         .b4{
-            animation-name: bounce4;
-            animation-duration: 1s;
-            animation-direction: alternate;
-            animation-iteration-count: infinite;
-            border: 1px solid blue;
-            height: 30px;
-            width: 30px;
-            background-color: blue;
-            border-radius: 50%;
-            margin-left: 100px;
-         }
-         @keyframes bounce5 {
-            
-            from{
-                transform:translateX(-10px);
-                background-color:orange
-            }
-         to{
-            transform: translateX(-200px);
-         }}
-        .b5{
-            animation-name: bounce5;
-            animation-duration: 1s;
-            animation-iteration-count: infinite;
-            animation-direction: alternate;
-            border: 1px solid black;
-            height: 30px;
-            width: 30px;
-            background-color: black;
-            border-radius: 50%;
-         }
-           .container{
-            display: flex;
-            /* align-items: center; */
-            /* justify-content: center; */
+  .w h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 80px;
+  }
+  .container{
+    display: flex;
+    gap: 200px;
+    padding: 40px;
+  }
+  p{
+    font-size: 20px;
+  }
+  .h{
+    font-size: 60px;
+    color: red;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  ul {
+  list-style: none;
+}
 
-        }
-        .a{
-            
-            height: 1000px;
-            width: 1000px;
-            display: flex
-            align-items: center;
-            justify-content: center;
-        }
-        @keyframes background{
-           10%{background-image:url("./m1.jpg");background-size: 300px 400px;background-position: center;rotate: 360deg;}
-           20%{background-image:url("./m2.jpg");background-size: 550px 700px;background-position: center;rotate: -360deg;}
-           30%{background-image:url("./m3.jpg");background-size: 400px 500px;background-position: center;rotate: 360deg;}
-           40%{background-image:url("./m4.jpeg");background-size: 600px 400px;background-position: center;rotate: -360deg;}
-           50%{background-image:url("./m5.jpeg");background-size:300px 500px;background-position: center;rotate: 360deg;}
-           60%{background-image:url("./m6.jpg");background-size: 700px 700px;background-position: center;rotate: -360deg;}
-           70%{background-image:url("./m7.jpeg");background-size: 500px 550px;background-position: center;rotate: 360deg;}
-           80%{background-image:url("./m8.jpg");background-size: 400px 600px;background-position: center;rotate: -360deg;}
-           90%{background-image:url("./m9.jpeg");background-size: 500px 500px;background-position: center;rotate: 360deg;}
-           100%{background-image:url("./m10.jpeg");background-size: 700px 800px;background-position: center;rotate: -360deg;}
-
-            }
-        .a{
-            animation: background;
-            animation-duration: 30s;
-            animation-iteration-count: infinite;
-            animation-direction: alternate;
-            background-repeat: no-repeat;
-
-        }
-        
-        @keyframes load {
-            from{transform: scale(0);
-            }
-            to{
-                transform: scale(1);
-                background-color: green;
-            } }
-            
-            
-            
-        .container1{
-            display: flex;
-            gap: 10px;
-        }
-        .b{
-            animation-name: load;
-            animation-duration: 1s;
-            animation-delay: 0s;
-       
-            animation-direction:alternate;
-            
-            animation-iteration-count: infinite;
-            height: 30px;
-            width: 30px;
-            border-radius: 50%;
-            background-color: palevioletred;
-        }
-            
-        
-            .c{
-            animation-name: load;
-            animation-duration:1s;
-            animation-delay:0.3s;
-            animation-iteration-count: infinite;
-            animation-direction: alternate;
-            
-            height: 30px;
-            width: 30px;
-            border-radius: 50%;
-            background-color: palevioletred;animation-duration: 1s;
-            
-           
-             }
-             .d{
-            animation-name: load;
-            animation-duration:1s;
-            animation-delay: 0.5s;
-            transition-timing-function: ease;
-            animation-iteration-count: infinite;
-            animation-direction: alternate;
-            height: 30px;
-            width: 30px;
-            border-radius: 50%;
-            background-color: palevioletred;
-           
-             }
-             .e{
-            animation-name: load;
-            animation-duration:1s;
-            animation-delay: 0.8s;
-            animation-direction: alternate;
-            animation-iteration-count: infinite;
-            height: 30px;
-            width: 30px;
-            border-radius: 50%;
-            background-color: palevioletred;
-           
-             }
-             .f{
-            animation-name: load;
-            animation-duration: 1s;
-            animation-delay: 0.9s;
-            animation-iteration-count: infinite;
-            height: 30px;
-            width: 30px;
-            border-radius: 50%;
-            background-color: palevioletred;
-            animation-direction: alternate;
-            
-         }
-         
-    </style>
+.list li::before {
+  content:"✓";
+  color: red;
+  font-weight:bolder;
+  display: inline-block;
+  margin-left: -1em;
+  width: 2em;
+}
+li{
+  font-size: 20px;
+}
+.o{
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+}
+.j{
+  display:inline;
+  padding-left: 50px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: blue;
+}
+</style>
 </head>
-<body><h1 >bouncing</h1>
-    <div class="balls">
-        <div class="b1"></div>
-        <div class="b2"></div>
-        <div class="b3"></div>
-        <div class="b4"></div>
-        <div class="b5"></div>
-    </div><br><br><br><br><br><br><br><br><br><br>v<br>
-    <h1 style=>Mahesh movies</h1>
-    <div class="container">
-        <div class="a"></div>
-
+<body>
+  <div id="u">
+  <h1 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 80px; text-align: center; color: plum;">Coursera</h1>
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#u">HOME</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mynavbar">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#course">COURSES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#certification">CERTIFICATIONS</a>
+          </li>
+         
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="text" placeholder="Search">
+          <button class="btn btn-primary" type="button">Search</button>
+        </form>
+      </div>
     </div>
-    <h1>loaders</h1>
+  </nav>
+ <div class="container">
+  <div class="q">
+    <div class="w"><h1>The</h1></div>
+    <div class="w"><h1>python</h1></div>
+    <div class="w"><h1>workshop</h1></div>
+    <p>Learn to code in Python and kickstart your career in software development or data science.</p>
+  </div>
+  
 
-    <div class="container1">
-        <div class="b"></div>
-        <div class="c" ></div>
-        <div class="d"></div>
-        <div class="e"></div>
-        <div class="f"></div>
-    </div><br><br><br><br><br>
+  <div><img src="./r.jpg" height="400px" width="500px"></div>
+  </div><br>
+<h1 class="h">Learning Made Simple</h1><br>
+<div class="o">
+<ul class="list">
+  <li>Build key Python skills with engaging development tasks and challenging activities.</li>
+  <li>Implement useful algorithms and write programs to solve real-world problems.</li>
+  <li>Apply Python in realistic data science projects and create simple machine learning models.</li>
+</ul>
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+  enroll now
+</button>
+</div>
     
+    <!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">sign in details</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputusername" class="form-label">Username:</label>
+            <input type="text" class="form-control" id="exampleInputname">
+            <div>enter your name</div>
+          </div>
+          <div class="mb-3">
+            <label for="gender">Gender:</label>
+            <input type="radio" id="female"  name="gender">female</input>
+            <input type="radio" id="male"  name="gender">male</input>
+          </div>
+          <label for="number">mobile number:</label><br>
+          <input type="tell" id="number">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            
+            <button formaction="./loginform.html" type="submit" class="btn btn-primary">sign in</button>
+          </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">login</button>
+        <button type="button" class="btn btn-primary">close</button>
+      </div>
+    </div>
+  </div>
+</div><br><br>
+<h1 style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 40px; background-color: lightblue; text-align: center;" id="course">Courses available</h1><br><br>
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+   
+  </div>
+
+  <!-- The slideshow/carousel -->
+  <div class="carousel-inner ">
+    <div class="carousel-item active ">
+      <h1 class="j">Data Analysist</h1>
+      <h1 class="j">Bussiness Analytics with Excel</h1>
+    </div>
+    <div class="carousel-item">
+      <h1 class="j">Introduction to Genrative AI</h1>
+      <h1 class="j">private equity and venture capital </h1>
+      </div>
+      <div class="carousel-item">
+      <h1 class="j">Organisational Analysis</h1>
+      <h1 class="j">Stanford Introduction to food and health</h1>
+      </div>
+      <div class="carousel-item">
+      <h1 class="j">Management of fashion</h1>
+      <h1 class="j">Artificial intelligence</h1>
+      </div>
+      
+    </div>
+    <div class="carousel-item">
+      <img src="./s.png" alt="New York"height="200px" width="200px" style="margin-left:100px">
+      <img src="./m.jpeg" alt="New York"height="200px" width="200px" style="margin-left:100px">
+      <img src="./o.png" alt="New York"height="200px" width="200px" style="margin-left:100px">
+      <img src="./ms.png" alt="New York"height="200px" width="200px"style="margin-left:100px">
+    </div>
+    
+  </div><br><br>
+
+  <!-- Left and right controls/icons -->
+  
+
+<h1 style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 40px; color: blueviolet;text-align: center; background-color: blanchedalmond;" id="certification">Certifications</h1><br><br>
+<h1 style="padding-left: 30px;">Get Certified by completing following courses:</h1><br><br>
+<!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+     
+    </div>
+  
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./h.png" alt="Los Angeles" height="200px" width="200px"style="margin-left:50px">
+        <img src="./rn.png" alt="New York"height="200px" width="200px" style="margin-left:50px">
+        <img src="./c.jpeg" alt="Chicago "height="200px" width="200px"style="margin-left:50px">
+        <img src="./js.png" alt="New York"height="200px" width="200px"style="margin-left:50px">
+        <img src="./n.png" alt="New York"height="200px" width="200px"style="margin-left:50px">
+      </div>
+      <div class="carousel-item">
+        <img src="./c.png" alt="Chicago "height="200px" width="200px" style="margin-left:100px">
+        <img src="./cp.png" alt="New York"height="200px" width="200px"style="margin-left:100px">
+        <img src="./p.png" alt="New York"height="200px" width="200px"style="margin-left:100px">
+        <img src="./java.png" alt="New York"height="200px" width="200px"style="margin-left:100px">
+        
+      </div>
+      <div class="carousel-item">
+        <img src="./s.png" alt="New York"height="200px" width="200px" style="margin-left:100px">
+        <img src="./m.jpeg" alt="New York"height="200px" width="200px" style="margin-left:100px">
+        <img src="./o.png" alt="New York"height="200px" width="200px" style="margin-left:100px">
+        <img src="./ms.png" alt="New York"height="200px" width="200px"style="margin-left:100px">
+      </div>
+      
+    </div>
+  
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+  </div>
 </body>
 </html>
