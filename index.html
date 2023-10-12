@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+       console.log("printing numbers using patterns")
+
+var b;
+function hi(b){
+var a ="";
+for(var i=1;i<=b;i++){
+  a=(a+i)+"";
+console.log(a);
+ 
+  
+}
+}hi(6);
+
+
+console.log("printing stars using patterens")
+function starprinting(){
+            
+            var star="";
+            for(i=1;i<=6;i++){
+                for(j=0;j<i;j++){
+                    star+="*";
+            }
+            star+="\n";
+           
+            }
+            console.log(star)
+            
+        }
+        starprinting();
+        
+        
+        
+      function stars2(){
+            var a="*";
+            for(i=5;i>=1;i--){
+             for(j=0;j<i;j++){
+                  a+="*";
+            }
+           a+="\n";
+            }
+            console.log(a)
+            }
+        
+        stars2();
+        
+        console.log("length of string using functions:");
+        
+  function length(a){
+        var count=0;
+        for(i=0;a[i];i++){
+        count++;
+        }
+        return a+" "+count;
+        }
+        console.log(length("hello world"),);
+        
+        console.log("print string in reverse order:")
+        
+        
+        
+
+  function rev(a){
+        var s="";
+        for(i=0;a[i];i++){
+        s= a[i]+s;
+        }
+        return s;
+        }
+        console.log(rev("lahari"));
+       
+       
+
+
+
+    </script>
+</body>
+</html>
