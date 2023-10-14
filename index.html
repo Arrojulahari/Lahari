@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    document.write("1.explain  the difference between slice and substring with examples");
+    document.write("<br>")
+
+let str="hello im a student of 10k coders";
+
+var str1=str.slice(0,18);
+document.write(` sol:  after slicing the string "${str}" from 0 to 18 the output is : "<br>" ${str1}."`);
+document.write("<br>")
+
+var str2=str.substring(-6,12);
+document.write(`the substring  of the  the string "${str}" from -6 to 18  is "<br> "${str1}."(because if we pass negative values as input of start position by default substring will take it as 0.)`);
+document.write("<br>")
+document.write("<br>")
+
+
+// -------------------------------------------------------------
+document.write("2. return the length of the string.")
+document.write("<br>")
+
+var a="lahari";
+document.write(` length of the string "${a}" is ${a.length}.`);
+document.write("<br>")
+document.write("<br>")
+// -----------------------------------------------------
+document.write("3.Extract a substring from the middle of a string");
+document.write("<br>")
+
+var c="hello world";
+document.write(`sub string from the string "${c}" is "${c.substr(6,5)}"`);
+document.write("<br>")
+document.write("<br>")
+// -----------------------------------------------------------
+var d ="Banana";
+document.write(`4. Replace all the vowels from the string "${d}" by any consonants`);
+document.write("<br>")
+document.write(`${d.replaceAll("a","h")}`)
+document.write("<br>")
+document.write("<br>")
+// ----------------------------------------------------------------
+var e ="trinity"
+document.write(`5.convert the given lower case string "${e}"to uppercase : `);
+
+
+document.write(`${e.toUpperCase()}`);
+document.write("<br>")
+document.write("<br>")
+// ------------------------------------------------------------------
+var F ="TRINITY"
+document.write(`6.convert the given upper case string "${F}"to lowercase : `);
+
+document.write(`${F.toLowerCase()}`);
+
+document.write("<br>")
+document.write("<br>")
+// ------------------------------------------------------------------
+document.write( "7.concate different words into a single sentence without using '+' operator")
+document.write("<br>")
+var a1="Today";
+var a2="weather";
+var a3="cool";
+document.write(`${a1.concat("  ","the", " ",a2," ","is"," ",a3)}`);
+document.write("<br>")
+document.write("<br>")
+// --------------------------------------------------------------
+document.write("8.return the 5 th and 7th character from the string 'institute'");
+
+var r="institute";
+document.write("<br>")
+document.write(`5th character is :${r.charAt(4)} <br> 8th character is:${r.charAt(8)}`);
+document.write("<br>")
+document.write("<br>")
+// -----------------------------------------------------------------
+document.write(`9.return the unicode ofcharacters "a","b,"c" `);
+document.write("<br>")
+var u="abc"
+for(i=0;i<=2;i++){
+document.write(`unicode of ${u[i]} is ${u.charCodeAt(i)}`);
+document.write("<br>")
+
+}
+document.write("<br>")
+// -------------------------------------------------------------------
+var h="         hello";
+document.write(`10.return the length of the string "${h}" before and after triming`)
+
+document.write("<br>")
+document.write(`length of the string before triming :${h.length}`);
+document.write("<br>")
+var t=h.trim();
+document.write(`length of the string after triming : ${t.length}`)
+
+document.write("<br>")
+document.write("<br>")
+// ------------------------------------------------------------------------
+document.write(`11.return the position of the first occurrence of "locate" from "Please locate where 'locate' occurs: `)
+
+
+var p="Please locate where 'locate' occurs!";
+document.write(`${p.indexOf("locate")}`)
+document.write("<br>")
+document.write("<br>")
+// ----------------------------------------------------------------
+document.write(`12.return the position of the last occurrence of "locate" from "Please locate where 'locate' occurs:  `)
+
+var p="Please locate where 'locate' occurs!";
+document.write(`${p.lastIndexOf("locate",)}`)
+document.write("<br>")
+document.write("<br>")
+// -----------------------------------------------------------------
+var t="html";
+document.write(`13.search for string ${t} in "html is a markup language" and return its position :   `)
+
+document.write(`${t.search("html")}`)
+document.write("<br>")
+document.write("<br>")
+// ------------------------------------------------------------------------
+var k="king always remains king in his kingdom";
+document.write(`14.check whether the string 'king' is present in "${k} : `)
+
+
+document.write(`${k.includes("king")}`);
+document.write("<br>")
+document.write("<br>")
+// -------------------------------------------------------------
+document.write(`15.concate two numbers by converting them to string `);
+document.write("<br>")
+var num1=9;
+var num2=8;
+var num3=num1.toString();
+var num4=num2.toString();
+document.write(`${num3.concat(num4)}`);
+document.write("<br>")
+document.write("<br>")
+// ---------------------------------------------------
+document.write("16.reverse the order of elemts of an array")
+document.write("<br>")
+var arr=[1,2,3,4,5]
+document.write(`array :${arr}`);
+document.write("<br>")
+document.write(`reverse order :${arr.reverse()}`)
+document.write("<br>")
+document.write("<br>")
+// -----------------------------------------------------
+var t="hello everyone"
+document.write(`17.check whether " ${t}" starts with "hello"`);
+document.write("<br>")
+document.write(`${t.startsWith("hello")}`);
+document.write("<br>")
+document.write("<br>")
+// ---------------------------------------------------------
+var tr="hello everyone"
+document.write(`18.check whether " ${tr}" starts with "everyone :  `)
+
+document.write(`${tr.startsWith("everyone")}`);
+document.write("<br>")
+document.write("<br>")
+// ------------------------------------------------------------------
+var hi = "Johny jhony yes papa";
+document.write(`19.check whether " ${hi}" ends with "johny"`)
+
+document.write("<br>")
+document.write(`${hi.endsWith("johny")}`)
+document.write("<br>")
+document.write("<br>")
+// --------------------------------------------------------------
+document.write("20.convert a string to an array and return its first element")
+document.write("<br>")
+var m="abcd";
+var m1=m.split("");
+document.write(`array is : ${m1}`)
+document.write("<br>")
+document.write(`first element of array is :${m1[0]}`)
+
+    </script>
+</body>
+</html>
