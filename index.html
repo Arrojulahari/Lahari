@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       console.log("1.define an object with properties of a car.")
+        const car={
+            "color":"red","company":"BMW","mileage":"100km","cost":"40lakhs"}
+             console.log(car);
+    // ----------------------------------------------------------------
+console.log("2. define an empty object by using construtor and assign properties using literals")
+const obj1=new Object();
+obj1.name="lahari";
+obj1.gender="female";
+obj1.education="B.tech"
+console .log(obj1)
+// ---------------------------------------------------------------------------
+console.log("3.define a function in an object returning the second property of object")
+ const obj2={fruit:"apple",flower:"rose",thing:"car",car:"Rangrover",fun:function(){
+    return this.flower
+ }
+}
+console.log(obj2.fun())
+// -------------------------------------------------------------------------
+console.log("4.define  nested objects and access the elements in each object")
+const obj3={
+    hi:{vehicle:"bus",duration:"3hrs",destination:"hyderabad"},hello:{name:"rahul",role:"employee",salary:25000}
+}
+console.log(obj3.hi)
+console.log("values in object  hi  are")
+console.log(obj3.hi.vehicle,obj3.hi.duration)
+console.log(obj3.hello)
+console.log("values in object  hello  are")
+console.log(obj3.hello.name,obj3.hello.role)
+// -----------------------------------------------------------------------
+console.log("5. return all the keys of an object using function")
+const obj4={title:"virupaksha",hero:"sai dharamtej",musicdirector:"DSP",fun1:function(){
+    console.log(Object.keys(obj4));
+}
+}
+console.log(obj4.fun1())
+// ------------------------------------------------------------------------------------
+console.log("6.return all the values of an object using a function in it")
+
+const obj5={title:"virupaksha",hero:"sai dharamtej",musicdirector:"DSP",fun1:function(){
+    console.log(Object.values(obj5));
+}
+}
+console.log(obj5.fun1())
+// ----------------------------------------------------------------------
+console.log("7.return all the keys and values of an object using a function in it")
+
+const obj6={title:"virupaksha",hero:"sai dharamtej",musicdirector:"DSP",fun2:function(){
+    console.log(Object.entries(obj6));
+}
+}
+console.log(obj6.fun2())
+
+// --------------------------------------------------
+console.log("8.define an array of objects and display the elemnts of object")
+const obj7=[{name:"karthik",profession:"software engineer",personaldetails:{age:"30years",gender:"male"}},{name1:"sushruth",profession1:"lawyer"},{name3:"anirudh",profession2:"doctor"}]
+for(i=0;i<obj7.length;i++){
+    console.log(obj7[i])
+}
+console.log(obj7[0].name,obj7[0].personaldetails.age)
+// -------------------------------------------------------------------
+console.log("9.write java script program to delete the rollno property from an object .also printnobject before deleting the property")
+const obj8={name:"ravi",class:"X",rolno:"34"}
+console.log(obj8)
+delete(obj8.rolno)
+console.log(obj8)
+// --------------------------------------------------------------------
+console.log("10.write java script program to get a value  from an object using getter")
+const obj9={name:"ravi",class:"X",rolno:"34",get no(){
+ return this.rolno;
+}}
+console.log(obj9.no);
+// ---------------------------------------------------------------------
+console.log("11.write java script program to set a value to an object using setter")
+const obj10={name:"lahari",age:"21",gender:"female",status:"",set value(a){
+this.status=a;
+}}
+console.log(obj10)
+obj10.value="eligible";
+console.log(obj10)
+    </script>
+</body>
+</html>
