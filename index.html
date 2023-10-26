@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("1.print the elements of an object using for in loop")
+        const obj={a:1,b:2,c:3,d:4,e:5}
+        for(x in obj){
+            console.log(obj[x]);
+        }
+        // -------------------------------------------------------------
+        console.log("2.print the elements of an array using for of loop")
+        const arr=[1,2,3,4,5]
+        for(i of arr){
+            console.log(i)}
+        // --------------------------------------------------------
+   console.log("3.convert a string into an array")
+var d="hello'every'one'goof'afternoon";
+var c=d.split("")
+var e=d.split("'")
+console.log(c,e)
+// -----------------------------------------------------------------------
+console.log("4.convert an array into string")
+var g=[1,2,3,4,5,6,]
+var k=g.join()
+console.log(k)
+// --------------------------------------------------------------
+console.log("5.return all the uppercase characters from the string")
+var m="ArRoJuLaHaRi"
+var n="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+for(i in m){
+    
+   if(n.indexOf(m[i])!=-1) 
+   {
+    console.log(m[i])
+   }
+}
+// -----------------------------------------------------------------------------------
+console.log("6.print a multiplication table using call back function")
+function table(t,t1){
+    for(i=1;i<=10;i++){
+console.log(t1(t))
+    }
+   
+}
+function table1(t){
+        return(`${t}*${i}=${t*i}`) 
+    }
+    
+(table(6,table1))   
+
+
+
+// ----------------------------------
+console.log("7.find the squares of an array using call back function")
+const arr2=[1,2,3,4,5]
+const b=[]
+function a(arr1,j){
+for( x of arr1){
+  b.push(j(x)) 
+}
+return b
+}
+function square(x){
+ return x*x
+  }  console.log(a(arr2,square))
+// --------------------------------------------------------
+console.log("8.print the even numbers of an array using call back function and also return new array")
+const arr3=[1,2,3,4,5]
+const b1=[]
+function numbers(array,even1){
+for(h of array){
+ if(even1(h)){   
+b1.push(even1(h))
+ }
+}
+return b1
+}
+let hi=(h)=>{
+    if(h%2==0){
+    return h;
+}
+}
+// function even(h){
+// if(h%2==0){
+//     return h;
+// }
+
+// }
+console.log(numbers(arr3,hi))
+// console.log(numbers(arr3,even))
+// -------------------------------------------------------------
+console.log("9.perform operations on array using map")
+const arr4=[1,2,3,4,5],arr5=[]
+// using arrow function
+const newarray=arr4.map((x)=>{ console.log(x,x*5);
+    return x*5;})
+
+
+console.log(newarray)
+
+// ---------------------------------------------------------------
+// using call back function
+// const newarray=arr4.map(hello)
+// function hello(x){
+    
+//     console.log(x,x*5);
+//     return x*5;
+
+// }
+// console.log(newarray)
+// -----------------------------------------------------------)
+// --------------------------------------------
+    // const fun=(x)=>{ console.log(x,x*5)
+    //     return x;
+    // }
+    // const newarray=arr4.map(fun)
+    // console.log(newarray)
+    // ----------------------------------------------------
+
+
+
+
+
+    </script>
+</body>
+
+</html>
