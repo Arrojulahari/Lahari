@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("creation of class and object<br>")
+        class emolpy{
+            constructor(a,b){
+                this.name=a;
+                this.salary=b;
+            }
+        }
+        var ab=new emolpy("lahari",30000);
+        console.log(ab)
+       
+        // -------------------------------------------------------------
+      console.log("encapsulation,getmethod,setmethod")
+        class employ
+        {
+            constructor(a,b,c)
+            {
+              this.name=a;
+              this.salary=b;
+              this.company=c;
+              console.log(this)
+        
+            }
+
+    getsuresh(){
+    return this.salary
+    }
+
+    setsalary(x){
+    this.salary=x
+    }
+    static hello(){
+        return "hello"
+    }
+       }
+// using get method to accquire object values
+const obj1=new employ("lahari",30000,"tcs");
+const obj2=new employ("suresh",25000,"infosys");
+const obj3=new employ("laya",30000,"techm")
+console.log(obj2.getsuresh())
+console.log(obj2.salary)
+//   modifying the values in objects using setmethod
+obj1.setsalary(80000)
+console.log(obj1)
+console.log(obj1.salary=80000)
+// // --------------------------------------------------------------------
+// if we define static word before a method then that method can be accesed by using class name
+// console.log(employ.hello())
+// ------------------------------------------------------------------
+console.log("inheritance:accqiring the parent properties to child")
+class numbers{
+    constructor(){
+        console.log("numbers includes all kind of numbers")
+    }
+}
+class wholenumbers extends numbers{
+    constructor(){
+        super();
+        console.log("whole numbers are subset of natural numbers")
+    }
+}
+class evennumbers extends wholenumbers{
+constructor(){
+    super();
+    console.log("even numbers are subset of whole numbers")
+}
+}
+const object=new evennumbers()
+
+// ----------------------------------------------------------------------
+console.log("method over riding")
+class animals
+{
+    constructor()
+    {
+        console.log("its an animals class")
+    }
+
+    bird(){
+   console.log("hi im ostrich")
+    }
+
+}
+var obj5=new animals()
+obj5.bird()
+
+class forest{
+    constructor(){
+        console.log("animals live in forest")
+    }
+
+    bird(){
+   console.log("different birds live in forest")
+    }
+    bird(){
+   console.log("im ostrich")
+    }
+
+}
+var obj6=new forest()
+obj6.bird()
+// -------------------------------------------------------------------------------------
+console.log("1. *Encapsulation with Getters and Setters:*Create a BankAccount class with encapsulated properties (accountNumber, balance). Implement methods getAccountNumber(), getBalance(), deposit(amount), and withdraw(amount) ensuring encapsulation.")
+class bankaccount{
+    constructor(a,b){
+        this.accountnumber=a;
+        this.balance=b;
+    }
+
+    getac_number(){
+        return this.accountnumber;
+    }
+
+ getbalance(){
+    return this.balance;
+ }
+
+ deposit(depositamount)
+{
+
+this.balance=this.balance+depositamount;
+console.log(`total amount after depositing is ${this.balance}`)
+}
+ withdraw(withdrawamount){
+ console.log(`total amount after withdrawaing is ${this.balance-withdrawamount}`)
+ }
+}
+const account1=new bankaccount(12345,50000)
+
+console.log(account1)
+console.log(`account number is ${account1.getac_number()}`);
+console.log(`balance in the account is ${account1.getbalance()}`)
+account1.deposit(30000)
+account1.withdraw(20000)
+// ------------------------------------------------------------------------
+console.log("2.*Private Properties:* Implement a class TemperatureConverter with a private property celsius. Implement methods setCelsius(value), getCelsius(), convertToFahrenheit(), and convertToKelvin() ensuring private access to the celsius property.")
+class temperatureconvertor{
+    constructor(){
+        this.celsius="";
+ }
+ setcelsius(a){
+  this.celsius=a
+ }
+
+ getcelsiues(){
+    return this.celsius
+ }
+toFahranheit(){
+    var f=(this.celsius*1.8)+32;
+    console.log(` ${this.celsius}C is equal to ${f}F`)
+}
+tokelvin(){
+    var k=(this.celsius+273.15)
+    console.log(`${this.celsius}C is equal to ${k} kelvin`)
+}
+}
+var temp=new temperatureconvertor()
+console.log(temp);
+temp.celsius=50;
+console.log(temp);
+console.log(`temperature in celcius is ${temp.getcelsiues()}`);
+temp.toFahranheit();
+temp.tokelvin();
+// -----------------------------------------------------------------
+console.log("3.*Static Method and Inheritance:*Create a MathOperations class with a static method square(number). Create a child class AdvancedMathOperations that extends MathOperations. Implement a static method cube(number) in AdvancedMathOperations.")
+class parent{
+    static square(value){
+      return value*value;
+      
+    }
+     static function(){
+        return("invoking method in parent class by using object of child class")
+     }
+}
+class child extends parent{
+       static cube(x){
+         return (x*x*x);
+        
+       }
+}
+
+console.log(parent.square(5))
+console.log(child.cube(5))
+console.log(child.function())
+// ------------------------------------------------------------------
+console.log("4.*Inheritance and Method Overriding:* Create a class Shape with methods calculateArea() and calculatePerimeter(). Create child classes Circle and Square that inherit from Shape. Override the calculateArea() method in both child classes.")
+ class shape{
+
+    static calculatearea(b)
+    {
+        return(` area of square is :${3.14*(b**2)}`)
+    }
+    static calculatearea(x)
+    {
+       return(` area of circle is : ${x*x}`)
+    }
+  
+    static calculateperimeter(a)
+    {
+     return(`perimeter of square is ${4*a}`)
+    }
+     static calculateperimeter(y)
+     {
+      return(`perimeter of circle is ${2*3.14*y}`)
+     }
+
+ }
+  class circle extends shape{
+        
+  }
+  class square extends shape{
+
+  }
+shape.calculatearea(7)
+console.log(square.calculatearea(6))
+console.log(square.calculateperimeter(6))
+console.log(circle.calculatearea(6))
+console.log(circle.calculateperimeter(6))
+    </script>
+</body>
+</html>
