@@ -1,0 +1,88 @@
+<!Doctype html>
+<html>
+<head>
+    <style>
+      #alignright{
+        text-align: right;
+        color: white;
+      } 
+      .color{
+        color: yellow;
+      }
+      #container{
+        margin: 50px;
+      }
+      .body{
+        background-color:black;
+      }
+      #p1{
+        color: wheat;
+      }
+    </style>
+<title>RESUME</title></head>
+<body id="body">
+<div class="container">
+<h2 id="heading1" class="p1">ARROJU LAHARI</h2>
+<p class="para">contact me:<a href="https://whatsapp.com/dl/">whatsaap</a>,<a href="https://www.instagram.com/invites/contact/?i=gzw4ehl9ztf4&utm_content=70vjib0">instagram</a></p>
+<p class="para ">Gmail:<a href="lahariarroju3@gmailcom">click here</a></p>
+<hr>
+<h3 >CAREER OBJECTIVES:</h3>
+<ul >
+<li class="p1">To get an opportunity where I can make the best of my potential and make a significant contribution 
+to the organisation’s growth.</li>
+</li>
+</ul>
+<h3>ACADEMIC DETAILS:</h3>
+<ul>
+<li class="p1">B. Tech.(CSE): Trinity College of Engineering and Technology, JawaharLal Nehru Technology University, 
+Hyderabad, </li>
+<li class="p1">Intermediate: Trinity Junior College, Telangana Board of Intermediate Education, Karimnagar, Telangana,</li>
+<li class="p1">High School: Siddhartha High School, Telangana Secondary Education Board, Karimnagar, Telangana.</li>
+</ul>
+<h3>TECHNICAL SKILLS:</h3>
+<ul>
+<li class="p1">c</li>
+<li class="p1">python</li>
+<li class="p1">html</li>
+</ul>
+<h3>STRENGTHS:</h3>
+<ul>
+<li class="p1">descent communication skills</li>
+<li class="p1">leadership</li>
+<li class="p1">positive attitude</li>
+</ul></li>
+<h3>PROJECTS</h3>
+<ul>
+<li class="p1">Helmet Detection and Liscence plate Extraction using CNN.
+</li>
+<li class="p1">Exploring E-commerce Product experience based on fusion sentiment analysis method.</li>
+</ul>
+<h3>DECLARATION</h3>
+<p class="p1">I here by declare that all the details mentioned above is correct to the best of my knowledge.</p>
+</div>
+<script>
+    let heading1=document.getElementById("heading1")
+    heading1.style.textAlign="center";
+   
+    let para=document.getElementsByClassName("para")
+    for(i=0;i<para.length;i++){
+        para[i].setAttribute("id","alignright")
+    }
+
+    let color=document.getElementsByTagName("h3")
+    for(i=0;i<color.length;i++)
+    color[i].setAttribute("class","color")
+
+    let container=document.getElementsByClassName("container")
+    container[0].setAttribute("id","container")
+     let body=document.getElementById("body")
+     body.setAttribute("class","body")
+
+    let p1=document.getElementsByClassName("p1")
+    for(i in p1){
+        p1[i].setAttribute("id","p1")
+    }
+    // console.log(color)
+</script>
+</body>
+</html>

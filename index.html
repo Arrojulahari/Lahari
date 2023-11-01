@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        .navbar{
+            display:flex;
+             padding-left: 500px;
+             justify-content: space-between;
+             height: 40px;
+             align-items: center;
+             margin:20px 0px 20px 0px;
+             font-size: 20px;
+        }
+
+        
+        .image{
+            position:absolute;
+            width:100%;
+            height: 400px;
+           z-index: -1;
+        }
+
+        .para{
+            /* position: absolute; */
+            color:white ;
+            padding: 100px;
+            padding-left:700px;
+            font-size: 50px;
+        }
+        .heading1{
+           
+            padding-left: 500px;
+            padding-top: 100px;
+            color: orange;
+        }
+        .heading2{
+            color: orange;
+            text-align: center;
+        }
+       .flex{
+        display:flex;
+        gap: 100px;
+       }
+    
+       .padding{
+        padding: 10px;
+       }
+       .body{
+        overflow-x: hidden;
+        background-color: lightgreen;
+       }
+       .flex3{
+        display: flex;
+        justify-content: space-around;
+       }
+       .l1{
+        color:green;
+       }
+    </style>
+</head>
+<body id="body">
+    <div id="container">
+       <div id="navbar">
+       <b> <div>home</div></b>
+        <b><div>our story</div></b>
+        <b><div>menu</div></b>
+        <b><div>cattering</div></b>
+        <b><div>contact & Hours</div></b>
+        <b><div>online order</div></b>
+        <b><div>Gift Cards</div></b>
+        </div>
+        <div>
+            <img id="image" src="./1.jpg">
+             <p id="para">soufi's</p>
+             
+        </div>
+    <div><br>
+
+    <h1 id="heading1">soufi's sriyan Restaurent and cafe</h1>
+    </div>
+
+    <div id="flex">
+        <div id="i"><img src="./2.jpg "height="400px" width="400px""></div>
+        <div > <h3 >know what ?</h3>
+        <p >Restaurants know the importance of a strong first impression. It's why they invest in exterior design, decorate their entranceways and train hosts to welcome guests with a warm smile. </p></div>
+        <div class="images"><img src="./3.jpg"height="400px" width="400px"></div>
+    </div>
+    <div id="flex1">
+        <div>
+        <h3>coffee and tea</h3>
+        <p > Cocktails mixed with coffee are a great way to improve your beverage menu. Other than coffee, other ingredients of such drinks might be guarana, green tea, and Yerba maté.</p>
+        </div>
+        <div ><img  src="./4.jpg "height="400px" width="400px"></div>
+        <div>
+        <h3>thickshakes and cakes</h3>
+        <p>A cake is a sweet food made by baking a mixture of flour, eggs, sugar, and fat in an oven. Cakes may be large and cut into slices or small and intended for one person only. ... a piece of cake.</p>
+    </div>
+   </div>
+      <h1 id="l">Soufi's Featured On</h1>
+      <div id="flex3">
+        <h2>The Newyork Times</h2>
+        <h2 >The Star</h2>
+        <h2>Tornoto Life</h2>
+        <h2>asian Life</h2>
+      </div>
+    </div>
+<script>
+    let navbar=document.getElementById("navbar");
+navbar.setAttribute("class","navbar")
+let image=document.getElementById("image")
+image.setAttribute("class","image")
+let heading=document.getElementById("para")
+heading.setAttribute("class","para")
+let heading1=document.getElementById("heading1")
+heading1.setAttribute("class","heading1")
+
+let div1=document.getElementById("flex")
+div1.setAttribute("class","flex")
+let div2=document.getElementById("flex1")
+div2.setAttribute("class","flex")
+let div3=document.getElementById("flex3")
+div3.setAttribute("class","flex3")
+let div4=document.getElementById("l")
+div4.setAttribute("class","heading2")
+let body=document.getElementById("body")
+body.setAttribute("class","body")
+let h=document.getElementsByTagName("h3")
+for(i in h){
+    h[i].setAttribute("class","l1")
+}
+
+
+
+
+
+</script>
+</body>
+</html>
