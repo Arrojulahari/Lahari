@@ -32,6 +32,46 @@ btn.addEventListener("click",()=>{
 
         div[0].appendChild(h1)
         div[0].appendChild(btn)
+//   -------------------------------------------------------------
+document.write("<br>")
+var val=0;
+let btn1=document.createElement("button")  
+btn1.innerHTML="positive"  
+let p=document.createElement("p") 
+
+btn1.addEventListener("click",()=>{
+ 
+ p.innerHTML=++val;
+
+})
+let btn2=document.createElement("button")
+btn2.innerHTML="negattive" 
+btn2.addEventListener("click",()=>{
+ 
+ p.innerHTML=--val;
+
+})
+
+document.body.appendChild(btn1)
+document.body.appendChild(btn2)
+document.body.appendChild(p)
+// -----------------------------------------------------------------------------
+var name="chaitanya"
+let pattern=/a/g
+let b=name.match(pattern)
+console.log(`no of a's in string ${name} is ${b.length}`)
+// ------------------------------------------------------------
+// var pattern1=/.@gmail.com$/
+// function email(){
+// let mail=prompt("enter email id")
+// let b=mail.match(pattern1)
+// if(b){
+//     alert("valid mail")
+// }
+// else{
+//     alert("invalid mail")
+// }
+// } email()
     </script>
    
 </body>
